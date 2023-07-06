@@ -16,7 +16,18 @@ ol {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* ----HEADER----- */
+
+/* MOBILE VERSION */
 
 @media (min-width: 320px) {
 
@@ -39,9 +50,18 @@ ol {
     }
 
     header nav {
-        background-color: #afd3ed;
+        background-color: white;
         margin-bottom: 50px;
     }
+
+    :root {
+        --bs-nav-link-color: white;
+    }
+
+    .nav-item {
+        color: var(--bs-nav-link-color);
+    }
+
 
 }
 
@@ -77,19 +97,19 @@ ol {
 
     .block1, .block2 {
         width: 300px;
-        height: 500px;
+        height: 200px;
         background-color: #452b1a;
     }
 
     .block3, .block4, .block5 {
         width: 300px;
-        height: 500px;
+        height: 200px;
         background-color: #afd3ed;
     }
 
     .block6, .block7{
         width: 300px;
-        height: 650px;
+        height: 200px;
         background-color: #452b1a;
     }
 
@@ -138,18 +158,33 @@ p {
 
 /* -------ASIDE------- */
 
-aside {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    z-index: 9999;
+@media (min-width: 320px) {
+
+
 
 }
 
-aside div {
-    background-color: #452b1a;
-    border-radius: 15%;
+
+
+
+
+@media(min-width: 1200px) {
+
+    aside {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        z-index: 9999;
+    
+    }
+    
+    aside div {
+        background-color: #452b1a;
+        border-radius: 15%;
+    }
+
 }
+
 
 
 /* -----------FOOTER---------- */
