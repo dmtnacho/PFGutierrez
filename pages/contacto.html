@@ -13,34 +13,55 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <h1>ALTERNO®</h1>
+
+   <!-- ----HEADER---- -->
+
+   <header>
+
+    <div class="header__logo">
+        <a href="./index.html">
+            <img src="../img/logo brand png without r.png" alt="Brand Logo Alterno">
+        </a>
+    </div>
+
+    <nav class="navbar navbar-expand-md border-bottom">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/skateboarding.html">Skateboarding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success btn-marron" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-
-        <nav class="navbar">
-            <ul class="listamain">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="./skateboarding.html">Skateboarding</a></li>
-                <li><a href="./aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
+    </nav>
 
 
-
-        <div class="navigation">
-            <form action="" class="search">
-                <input type="search" placeholder="Busqueda...">
-                <input type="submit">
-            </form>
-            <a href="./carrito.html"><button>Carrito</button></a>
-        </div>
-
-    </header>
+</header>
 
     <article>
         <form action="/enviar.php" method="POST">
