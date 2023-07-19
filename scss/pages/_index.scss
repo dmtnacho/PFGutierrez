@@ -1,0 +1,141 @@
+/* --------MAIN-------- */
+
+/* ESTILOS INDEX */
+
+@media (min-width: 320px) {
+
+
+
+    body p {
+        margin-bottom: 0;
+    }
+
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+
+
+    /* IMAGENES PARA LOS BLOCKES INDEX, SOON */
+
+    .images__index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block1,
+    .block2 {
+        width: 300px;
+        height: 200px;
+        background-color: #452b1a;
+    }
+
+    .block3,
+    .block4,
+    .block5 {
+        width: 300px;
+        height: 200px;
+        background-color: #afd3ed;
+    }
+
+    .block6,
+    .block7 {
+        width: 300px;
+        height: 200px;
+        background-color: #452b1a;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    main .images__index {
+        display: grid;
+        grid-template-columns: repeat(2, 550px);
+        grid-template-rows: repeat(5, 500px);
+        justify-items: center;
+        grid-gap: 25px 10px;
+
+    }
+
+    main .block1,
+    .block2 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    main .block3 {
+        grid-column: 1 / span 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .block4 {
+        grid-column: 1 / span 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .block5 {
+        grid-column: 1 / span 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .block6,
+    .block7 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ---------- SECCION LOCALES - SCROLL DE IMAGENES --------*/
+
+@media (min-width: 320px) {
+
+
+    .imageconteiner {
+        position: relative;
+    }
+
+    .stores__section img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stores__section h2 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 3rem;
+        color: #afd3ed;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        word-spacing: 0.5em;
+    }
+
+
+    /* Para colocar en version desktop luego de la pre entrega, cosas a corregir */
+
+    /* p {
+        margin-bottom: 0;
+    } */
+
+
+    /* .textbox1 {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        background-color: white;
+        padding: 10px;
+        width: 300px;
+        height: 70px;
+    } */
+
+}

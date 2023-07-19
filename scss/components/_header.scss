@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+
+header {
+    background-color: #afd3ed;
+}
+
+header .header__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 1200px) {
+
+    header {
+        background-color: #afd3ed;
+    }
+
+
+}

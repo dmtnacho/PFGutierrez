@@ -1,0 +1,18 @@
+/* -------ASIDE------- */
+
+@media (min-width: 320px) and (max-width: 1980px) {
+
+    aside {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        z-index: 9999;
+
+    }
+
+    aside div {
+        background-color: #452b1a;
+        border-radius: 15%;
+    }
+
+}
