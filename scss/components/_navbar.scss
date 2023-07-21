@@ -1,19 +1,36 @@
-@media (min-width: 320px) {
 
     header nav {
         background-color: white;
         margin-bottom: 50px;
     }
 
+    .btn-burguer {
+        color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0);
+    }
+
     .btn-marron {
-        color: #452b1a;
-        border-color: #452b1a;
+        color: #634836;
+        border-color: #634836;
     }
 
     .btn-marron:hover {
-        background-color: #452b1a;
+        background-color: #634836;
         color: white;
-        border-color: #452b1a;
+        border-color: #634836;
     }
 
-}
+    @media (min-width: 320px)  {
+    .dropdown-menu {
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+
+    }
+
+    @media (min-width: 1200px)  {
+        .dropdown-menu {
+            background-color:white;
+            border: 1px solid rgba(0, 0, 0, 0.363);
+        }
+        } 
+    }     

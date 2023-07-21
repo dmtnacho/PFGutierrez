@@ -1,13 +1,13 @@
 
 @media (min-width: 320px) {
 
-    h1 {
-        display: flex;
-            justify-content: center;
-            color: #452b1a;
-            font-style: italic;
-            margin-bottom: 30px;
-    }
+    // h1 {
+    //     display: flex;
+    //         justify-content: center;
+    //         color: #452b1a;
+    //         font-style: italic;
+    //         margin-bottom: 30px;
+    // }
 
 
 }
@@ -17,20 +17,20 @@
 
 @media (min-width: 1200px) {
 
-    h1 {
-        display: flex;
-            justify-content: center;
-            color: #452b1a;
-            font-style: italic;
-            margin-bottom: 30px;
+    // h1 {
+    //     display: flex;
+    //         justify-content: center;
+    //         color: #452b1a;
+    //         font-style: italic;
+    //         margin-bottom: 30px;
 
-            & .contact__text {
-                display: flex;
-                justify-content: center;
-                color: #452b1a;
-            }
+    //         & .contact__text {
+    //             display: flex;
+    //             justify-content: center;
+    //             color: #452b1a;
+    //         }
         
-    }
+    // }
 
     
 

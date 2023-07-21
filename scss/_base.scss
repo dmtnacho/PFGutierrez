@@ -19,3 +19,25 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
+
+/* -----MIXINS Y VARIABLES----- */
+
+@mixin tablet {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+
+
+$cool-general: #634836;
+$title-size__desktop: 45px;
+$title-size__tablet: 35px;
+$title-size__mobile: 25px;

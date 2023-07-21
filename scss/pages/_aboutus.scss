@@ -1,97 +1,92 @@
-@media (min-width: 1200px) {
+/*----DESKTOP VERSION---- */
+/*----ABOUTUS SECCION---- */
 
-    .bloques__aboutus {
-        display: grid;
-        grid-template-columns: repeat(2, 550px);
-        grid-template-rows: repeat(4, 800px);
-        justify-items: center;
+
+h1 {
+    font-size: $title-size__desktop;
+    color: $cool-general;
+}
+
+.seccion__aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .bloque__aboutus img {
+        display: flex;
         justify-content: center;
-        grid-gap: 25px 25px;
+        align-items: center;
+    }
 
-        & .bloque__principal {
-            grid-column: 1 / span 2;
+    & .bloque__aboutus {
 
-            & img {
-                width: 100%;
-                height: 100%;
-            }
-
-            & h3 {
-                grid-row: 2 / 1;
-                justify-items: center;
-            }
-
-
-
-
-
-
-
+        & h3 {
+            display: block;
+            color: $cool-general;
         }
 
-        & .bloque__segundo {
-            grid-column: 1 / span 2;
-
-
-            & img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-
-
-
+        & p {
+            display: block;
+            color: $cool-general;
         }
-
-
-
-
-
-
-
-
-
-        & .bloque__tercero {
-            grid-column: 1 / span 2;
-
-
-            & img {
-                width: 100%;
-                height: 100%;
-            }
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-        & .bloque__cuarto {
-            grid-column: 1 / span 2;
-
-            & img {
-                width: 100%;
-                height: 100%;
-            }
-
-
-
-
-        }
-
-
-
-
-
     }
 
 
+}
 
 
+
+
+
+/*----TABLET VERSION---- */
+
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: $title-size__desktop;
+        color: $cool-general;
+    }
+
+    .seccion__aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        & .bloque__aboutus img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+       
+    }
+}
+
+
+
+/*----MOBILE VERSION---- */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: $title-size__desktop;
+        color: $cool-general;
+    }
+
+    .seccion__aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        & .bloque__aboutus img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+       
+    }
 }
