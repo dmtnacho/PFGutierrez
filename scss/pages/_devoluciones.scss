@@ -10,12 +10,10 @@ main .return__section {
     grid-gap: 25px 30px;
     margin: 30px;
     padding: 0 100px;
-
-
 }
 
 /*----TABLET VERSION---- */
-@media (max-width: 1200px) {
+@include tablet {
 
     main .return__section {
         display: grid;
@@ -38,15 +36,16 @@ main .return__section {
 }
 
 /*----MOBILE VERSION---- */
-@media (max-width: 768px) {
+@include mobile {
 
     main .return__section {
         display: flex;
         justify-content: center;
-    }
-    main img {
-        display: none;
+
     }
 
+    .section__imag img {
+        display: none;
+    }
 
 }

@@ -22,7 +22,7 @@ main .skateboarding__products {
 
 /*----TABLET VERSION---- */
 
-@media (max-width: 1200px) {
+@include tablet {
 
     h1 {
         font-size: $title-size__tablet;
@@ -42,7 +42,7 @@ main .skateboarding__products {
     
 /*----MOBILE VERSION---- */
 
-@media (max-width: 768px) {
+@include mobile {
     
     h1 {
         font-size: $title-size__mobile;
