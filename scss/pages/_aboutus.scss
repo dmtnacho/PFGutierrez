@@ -7,86 +7,323 @@ h1 {
     color: $cool-general;
 }
 
+h3 {
+    color: $cool-general;
+}
+
+p {
+    color: $cool-general;
+}
+
+h4 {
+    font-size: 30px;
+    color: $cool-general;
+    font-style: italic;
+}
+
 .seccion__aboutus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "imagen1 texto1"
+        "imagen1 texto1"
+        "imagen1 imagen2"
+        "texto2 imagen2"
+        "imagen3 imagen2"
+        "imagen3 empty"
+        "texto4 texto4"
+        "imagen4 imagen4";
 
-    & .bloque__aboutus img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    & .bloque__aboutus {
-
-        & h3 {
-            display: block;
-            color: $cool-general;
-        }
-
-        & p {
-            display: block;
-            color: $cool-general;
-        }
-    }
-
-
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 50px;
 }
 
 
+.aboutus {
 
-
-
-/*----TABLET VERSION---- */
-
-@media (max-width: 1200px) {
-
-    h1 {
-        font-size: $title-size__desktop;
-        color: $cool-general;
+    &__img1 {
+        grid-area: imagen1;
     }
+
+    &__text1 {
+        grid-area: texto1;
+        margin-top: 100px;
+
+    }
+
+    &__img2 {
+        grid-area: imagen2;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text2 {
+        grid-area: texto2;
+    }
+
+    &__img3 {
+        grid-area: imagen3;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img4 {
+        grid-area: imagen4;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__text4 {
+        grid-area: texto4;
+    }
+
+    &__final {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+@include tablet {
 
     .seccion__aboutus {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        & .bloque__aboutus img {
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 20px;
+    }
+
+
+
+    .aboutus {
+
+        &__img1 {
             display: flex;
             justify-content: center;
-            align-items: center;
+
+            & img {
+                width: 70%;
+                height: auto;
+            }
         }
     
-       
+        &__text1 {
+            margin-top: 100px;
+    
+        }
+    
+        &__img2 {
+            display: flex;
+            justify-content: center;
+            
+        }
+    
+        &__img3 {
+            display: flex;
+            justify-content: center;
+        }
+    
+        &__img4 {
+            display: flex;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+    
+        }
+    
+        &__final {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            margin-bottom: 20px;
+    
+        }
+    
     }
+
+
+
+
+
+
 }
 
-
-
-/*----MOBILE VERSION---- */
-
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: $title-size__desktop;
-        color: $cool-general;
-    }
+@include mobile {
 
     .seccion__aboutus {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        & .bloque__aboutus img {
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 20px;
+    }
+
+
+
+    .aboutus {
+
+        &__img1 {
             display: flex;
             justify-content: center;
-            align-items: center;
+
         }
     
-       
+        &__text1 {
+            margin-top: 100px;
+    
+        }
+    
+        &__img2 {
+            display: flex;
+            justify-content: center;
+            
+        }
+    
+        &__img3 {
+            display: flex;
+            justify-content: center;
+        }
+    
+        &__img4 {
+            display: flex;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+    
+        }
+    
+        &__final {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            margin-bottom: 20px;
+    
+        }
+    
     }
+
+
+
+
+
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     & .bloque__aboutus img {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     & .bloque__aboutus {
+
+//         & h3 {
+//             display: block;
+//             color: $cool-general;
+//         }
+
+//         & p {
+//             display: block;
+//             color: $cool-general;
+//         }
+//     }
+
+
+// }
+
+
+
+
+
+// /*----TABLET VERSION---- */
+
+// @media (max-width: 1200px) {
+
+//     h1 {
+//         font-size: $title-size__desktop;
+//         color: $cool-general;
+//     }
+
+//     .seccion__aboutus {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+
+//         & .bloque__aboutus img {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+
+
+//     }
+// }
+
+
+
+// /*----MOBILE VERSION---- */
+
+// @media (max-width: 768px) {
+
+//     h1 {
+//         font-size: $title-size__desktop;
+//         color: $cool-general;
+//     }
+
+//     .seccion__aboutus {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+
+//         & .bloque__aboutus img {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+
+
+//     }
+// }

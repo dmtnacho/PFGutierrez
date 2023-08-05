@@ -1,9 +1,54 @@
-@media (min-width: 320px) {
 
     .margin__pagination {
         margin-top: 5rem;
     }
 
+    .pagination__prods {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        padding: 15px;
+        background-attachment: fixed;
+        border-radius: 50px;
+    }
+
+    .pagination__prods li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .pagination__prods li a {
+        background-color: #fff;
+        text-align: center;
+        text-decoration: none;
+        color: #452b1a;
+        border-radius: 50%;
+        margin: 8px;
+        box-shadow: inset 0 5px 10px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.5);
+        transition: 0.5s;
+        display: block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+
+    }
+
+    .pagination__prods li a:hover,
+    .pagination__prods li a.active {
+        color: #fff;
+        background-color: #262626;
+
+    }
+
+    .pagination__prods li:first-child a{
+        border-radius: 50px 0 0 50px;
+
+    }
+
+    .pagination__prods li:last-child a{
+        border-radius: 0 50px 50px 0;
+
+    }
 
     .page-link {
         color: #452b1a;
@@ -13,4 +58,3 @@
         }
     }
 
-}
