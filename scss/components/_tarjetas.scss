@@ -1,3 +1,46 @@
+main .seccion__compra {
+    padding: 80px;
+
+    & img {
+        width: auto;
+        height: 150px;
+    }
+}
+
+main .small-container {
+    margin: 80px auto;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #634836;
+    background-color: #afd3ed;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+}
+
 
 main .block__product {
     align-items: center;
@@ -8,6 +51,11 @@ main .block__product {
         height: 450px;
         background-color: #efe5da;
         object-fit: contain;
+
+        &:hover {
+            transition: background-color 0.8s ease;
+            background-color: #8b857f;
+        }
     }
 
     & h3 {
@@ -28,4 +76,3 @@ main .block__product {
     }
 
 }
-

@@ -12,13 +12,16 @@
     .btn-marron {
         color: #634836;
         border-color: #634836;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: #634836;
+            color: white;
+            border-color: #634836;
+        }
     }
 
-    .btn-marron:hover {
-        background-color: #634836;
-        color: white;
-        border-color: #634836;
-    }
 
     @media (min-width: 320px)  {
     .dropdown-menu {
