@@ -1,0 +1,41 @@
+
+.prods__compra {
+    display: grid;
+    grid-template-areas: 
+    "products remov subtotal"
+    "listadoprods listadoprods listadoprods";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 25px 30px;
+    margin: 80px;
+}
+
+.prods__compra {
+
+    &_prodtex1 {
+        grid-area: products;
+    }
+
+    &_removetex1 {
+        grid-area: remov;
+
+    }
+
+    &_subttex1 {
+        grid-area: subtotal;
+    }
+}
+
+.prods__total {
+
+    & img {
+        height: 150px;
+        width: auto;
+    }
+
+    & h3 {
+        font-size: medium;
+    }
+}

@@ -543,6 +543,35 @@ h4 {
     margin-bottom: 20px;
   }
 }
+.prods__compra {
+  display: grid;
+  grid-template-areas: "products remov subtotal" "listadoprods listadoprods listadoprods";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px auto;
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 25px 30px;
+  margin: 80px;
+}
+
+.prods__compra_prodtex1 {
+  grid-area: products;
+}
+.prods__compra_removetex1 {
+  grid-area: remov;
+}
+.prods__compra_subttex1 {
+  grid-area: subtotal;
+}
+
+.prods__total img {
+  height: 150px;
+  width: auto;
+}
+.prods__total h3 {
+  font-size: medium;
+}
+
 /*----DESKTOP VERSION---- */
 /*----RETURN SECCION---- */
 main .return__section {
@@ -801,42 +830,13 @@ header nav {
   }
 }
 main .seccion__compra {
+  display: flex;
+  justify-content: center;
   padding: 80px;
 }
 main .seccion__compra img {
   width: auto;
   height: 150px;
-}
-
-main .small-container {
-  margin: 80px auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.cart-info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-th {
-  text-align: left;
-  padding: 5px;
-  color: #634836;
-  background-color: #afd3ed;
-}
-
-td {
-  padding: 10px 5px;
-}
-
-td input {
-  width: 80px;
-  height: 30px;
-  padding: 5px;
 }
 
 main .block__product {
