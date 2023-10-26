@@ -545,9 +545,9 @@ h4 {
 }
 .prods__compra {
   display: grid;
-  grid-template-areas: "products remov subtotal" "listadoprods listadoprods listadoprods";
+  grid-template-areas: "products remov subtotal" "listadoprods listadoprods listadoprods" "total2 total2 total";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px auto;
+  grid-template-rows: auto auto auto;
   justify-items: center;
   justify-content: center;
   grid-gap: 25px 30px;
@@ -564,12 +564,40 @@ h4 {
   grid-area: subtotal;
 }
 
-.prods__total img {
+.prods__subtotal {
+  grid-area: listadoprods;
+}
+.prods__subtotal img {
   height: 150px;
   width: auto;
 }
-.prods__total h3 {
+.prods__subtotal h3 {
   font-size: medium;
+}
+
+.prods__total {
+  display: grid;
+  grid-area: total;
+}
+
+.prods__finish {
+  display: grid;
+  grid-template-areas: "precio1 precio2 precio3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 25px 30px;
+  margin: 20px;
+}
+.prods__finish_imgrez1 {
+  grid-area: precio1;
+}
+.prods__finish_nomrez1 {
+  grid-area: precio2;
+}
+.prods__finish_valuerez1 {
+  grid-area: precio3;
 }
 
 /*----DESKTOP VERSION---- */

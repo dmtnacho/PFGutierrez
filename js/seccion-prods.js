@@ -33,7 +33,7 @@ function renderizarProds(listaProds) {
         nombreProducto.textContent = prod.nombre;
 
         const precioProducto = document.createElement('p');
-        precioProducto.textContent = `$ ${prod.precio.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+        precioProducto.textContent = `€ ${prod.precio.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 
 
         tarjeta.appendChild(imagenProducto);
@@ -44,16 +44,13 @@ function renderizarProds(listaProds) {
     }
 }
 
-
-
-
-
-
-
 function agregarCarrito(producto) {
     carrito.push(producto);
     console.table(carrito);
-    alert(`¡${producto.nombre} se agrego al carrito exitosamente!`);
+    Toastify({
+        text: (`¡${producto.nombre} se agrego al carrito exitosamente!`),
+        duration: 3000
+    }).showToast();
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
