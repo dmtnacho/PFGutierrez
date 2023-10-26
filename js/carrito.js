@@ -47,27 +47,6 @@ function renderizarProds(listaProds) {
     }
 }
 
-
-
-
-
-
-
-
-
-// function eliminarCarrito(producto) {
-//     // Encuentra el índice del producto en el carrito
-//     const indice = carrito.findIndex(item => item.id === producto.id && item.cat === producto.cat);
-
-//     carrito.splice(indice, 1);
-//     console.table(carrito);
-//     localStorage.setItem('carrito', JSON.stringify(carrito));
-
-//     alert(`¡${producto.nombre} se eliminó del carrito exitosamente!`);
-//     renderizarProds(carrito);
-//     console.table(carrito);
-// }
-
 function resumenCarrito() {
     const resumenContainer = document.getElementById('total');
     resumenContainer.innerHTML = '';

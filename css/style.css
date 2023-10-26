@@ -580,6 +580,12 @@ h4 {
   grid-area: total;
 }
 
+.buy-bn {
+  display: grid;
+  grid-area: total;
+  margin: 40px;
+}
+
 .prods__finish {
   display: grid;
   grid-template-areas: "precio1 precio2 precio3";

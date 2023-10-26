@@ -49,6 +49,11 @@
     grid-area: total;
 }
 
+.buy-bn {
+    display: grid;
+    grid-area: total;
+    margin: 40px;
+    }
 
 .prods__finish {
     display: grid;
@@ -72,3 +77,4 @@
         grid-area: precio3;
     }
 }
+

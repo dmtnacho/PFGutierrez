@@ -48,8 +48,13 @@ function agregarCarrito(producto) {
     carrito.push(producto);
     console.table(carrito);
     Toastify({
-        text: (`¡${producto.nombre} se agrego al carrito exitosamente!`),
-        duration: 3000
+        text: (`¡${producto.nombre} successfully added to the cart!`),
+        duration: 3000,
+        gravity: 'top',
+        position: 'right',
+        style: {
+            background: 'linear-gradient(180deg, rgba(99,72,54,1) 0%, rgba(99,72,54,0.8169642857142857) 100%)'
+        }
     }).showToast();
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
